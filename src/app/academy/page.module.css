@@ -1,0 +1,189 @@
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonyBar h3,
+.galaryBar h3 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.infoHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.haeder {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #485e76;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.location {
+  text-align: center;
+  font-size: 1rem;
+}
+.time {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.btn {
+  background-color: #306dae;
+  color: #fff;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+.testimony {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 1rem;
+}
+
+.testimonyTest {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  line-height: 1.8rem;
+}
+
+.bar {
+  width: 10rem;
+  height: 0.5rem;
+  background-color: #5c7289;
+  margin-bottom: 1rem;
+}
+.testimonyBar {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.reviewName {
+  margin-top: 3rem;
+  color: #306dae;
+  font-size: 20px;
+  font-weight: 600;
+}
+.rating {
+  display: flex;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.galaryBar {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.ratingStar {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.galary {
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 4rem;
+}
+.galaryImage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+.moreBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.moreBtn h6 {
+  color: #306dae;
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.image {
+  border-radius: 5px;
+}
+
+.contact {
+  display: flex;
+
+  margin-top: 1rem;
+  flex-direction: column;
+  max-width: 1100px;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* margin-left: 2rem; */
+  max-width: 100%;
+  gap: 20px;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.contactBtn {
+  background-color: #306dae;
+  color: #fff;
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.contactInfo h6 {
+  font-size: 1.5rem;
+  text-align: start;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contactDetails p {
+  line-height: 2.4rem;
+  font-size: 18px;
+  font-weight: 500;
+}

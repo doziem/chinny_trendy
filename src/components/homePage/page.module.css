@@ -1,0 +1,101 @@
+.btn {
+  width: 480px;
+  padding: 15px 20px;
+  color: blue;
+  background-color: #f4f4f4;
+  border: none;
+  margin-right: 20px;
+  font-size: 40px;
+  text-align: right;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.collectionHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img {
+  border-radius: 13px;
+}
+.filter {
+  text-align: right;
+  width: 200px;
+  border: none;
+  background-color: #165baa;
+  color: #fff;
+  margin-right: 70px;
+  margin-top: 70px;
+  padding: 20px;
+}
+
+.collectionInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 40px;
+  margin-right: 20px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #165baa;
+}
+.price {
+  font-size: 25px;
+  font-weight: 400;
+}
+select.select {
+  margin-right: 20px;
+}
+select.mySelectArrow {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #165baa;
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 22px;
+  height: 65px;
+}
+select.mySelectArrow:focus {
+  outline: none;
+}
+select.mySelectArrow option {
+  color: #fff;
+  padding: 0 10px;
+  background-color: 565656;
+}
+.select:after {
+  content: '\25BC';
+  position: absolute;
+  height: 40px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 25px;
+  /* border: 1px solid #565656; */
+  background: #165baa;
+  color: #fff;
+  padding: 11px 15px;
+  pointer-events: none;
+  outline: none;
+}
+.select {
+  position: relative;
+  width: 350px;
+  margin-top: 60px;
+  margin-right: 40px;
+  border-radius: 10px;
+}
