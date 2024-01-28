@@ -1,8 +1,16 @@
 .container {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
+  display: flex;
+  flex-direction: column;
   width: 100%;
   text-align: center;
   padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer {
+  display: flex;
+  gap: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }

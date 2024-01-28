@@ -1,7 +1,10 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
 import { FaRegStarHalfStroke } from 'react-icons/fa6';
+import { logging } from '../../../next.config';
 
 const homeData = [
   {
@@ -10,6 +13,7 @@ const homeData = [
     price: 200,
     rating: 189,
     title: 'The Royal Gown',
+    quantity: 1,
   },
   {
     id: 2,
@@ -17,6 +21,7 @@ const homeData = [
     price: 200,
     rating: 189,
     title: 'The Royal Gown',
+    quantity: 1,
   },
   {
     id: 3,
@@ -24,6 +29,7 @@ const homeData = [
     price: 200,
     rating: 189,
     title: 'The Royal Gown',
+    quantity: 1,
   },
 
   {
@@ -32,6 +38,7 @@ const homeData = [
     price: 200,
     rating: 189,
     title: 'The Royal Gown',
+    quantity: 1,
   },
   {
     id: 5,
@@ -39,6 +46,7 @@ const homeData = [
     price: 200,
     rating: 189,
     title: 'The Royal Gown',
+    quantity: 1,
   },
 
   {
@@ -47,18 +55,28 @@ const homeData = [
     price: 200,
     rating: 189,
     title: 'The Royal Gown',
+    quantity: 1,
   },
 ];
 
 const PageSection = () => {
+  const [selectedProduct, setSelectedProduct] = useState([]);
+
+  const handleSelectedProduct = (item) => {
+    let itemArr = [...selectedProduct];
+    const existProd = selectedProduct?.find((prod) => prod?.id === item?.id);
+    if (existProd) {
+      return;
+    } else {
+      itemArr.push(item);
+      setSelectedProduct(itemArr);
+    }
+  };
+
   return (
     <div>
       <div className={styles.collectionHeader}>
         <button className={styles.btn}>Clothing Collection</button>
-        {/* <select className={styles.filter}>
-          <option value="men">men</option>
-          <option value="female">female</option>
-        </select> */}
         <div className={styles.select}>
           <select className={styles.mySelectArrow}>
             <option value="Female">Female</option>
@@ -68,7 +86,11 @@ const PageSection = () => {
       </div>
       <div className={styles.collectionInfo}>
         {homeData.map((data) => (
-          <div key={data?.id} className={styles.description}>
+          <div
+            key={data?.id}
+            className={styles.description}
+            onClick={() => handleSelectedProduct(data)}
+          >
             <Image
               src={data?.img}
               width={400}

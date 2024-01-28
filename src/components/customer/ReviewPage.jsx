@@ -29,6 +29,7 @@ const ReviewPage = () => {
           <div className={styles.profileContainer}>
             <Image
               src={'/back.jpg'}
+              alt=""
               width={70}
               height={60}
               className={styles.avater}
@@ -42,6 +43,7 @@ const ReviewPage = () => {
         <div className={styles.commentInfo}>
           <div className={styles.imgBackground}></div>
           <Image
+            alt=""
             src={'/back.jpg'}
             width={450}
             height={500}
@@ -51,6 +53,7 @@ const ReviewPage = () => {
       </div>
       <div className={styles.contact}>
         <Image
+          alt=""
           src={'/contactImg.jpg'}
           width={250}
           height={450}
